@@ -1,4 +1,6 @@
+import { Divider } from '@chakra-ui/react';
 import { Banner } from "../components/Banner";
+import { ContinentsSlider } from '../components/ContinentsSlider';
 import { TravelTypes } from "../components/TravelTypes";
 
 export default function Home() {
@@ -6,6 +8,8 @@ export default function Home() {
     <>
       <Banner />
       <TravelTypes />
+      <Divider bg="gray.600" h={1} w={90} m="auto" borderRadius="full"/>
+      <ContinentsSlider />
     </>
   );
 }

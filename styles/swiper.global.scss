@@ -1,0 +1,20 @@
+.swiper-pagination-bullet {
+  height: 1rem;
+  width: 1rem;
+  background: #999;
+  opacity: 1;
+
+  & + & {
+    margin-left: 0.75rem;
+  }
+
+  &.swiper-pagination-bullet-active {
+    background: #ffba08;
+  }
+}
+
+.swiper-button-next, .swiper-button-prev{
+  margin-right: 1.5rem;
+  font-size: 15rem;
+  color: #ffba08;
+}
