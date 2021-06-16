@@ -2,6 +2,7 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import { Box } from '@chakra-ui/react';
 import { Heading } from '../components/Continent/Heading';
 import { api } from '../services/api';
+import { Content } from '../components/Continent/Content';
 
 interface FeaturedCity {
   id: number;
@@ -32,6 +33,7 @@ export default function ContinentPage({continent}: ContinentPageProps) {
   return (
     <Box>
       <Heading bannerUrl={continent.banner_url} title={continent.name}/>
+      <Content description={continent.description} stats={continent.stats}/>
     </Box>
   )
 }
