@@ -8,10 +8,10 @@ export function Header() {
   const isHomePage = router.asPath === "/";
 
   return(
-    <Heading w="100%">
-      <Flex h="24" align="center" justify="center" w="100%" px="140px">
-        {!isHomePage && <Link href="/" mr="auto"><Icon as={BsChevronLeft}/></Link>}
-        <Image src="Logo.svg" h="14" position="relative" right="50%" translateX="50%" transform="auto"/>
+    <Heading w="100%" h="24">
+      {!isHomePage && <Link href="/" position="absolute" left="140px" top="24px"><Icon as={BsChevronLeft}/></Link>}
+      <Flex align="center" justify="center" w="100%" px="140px" h="24">
+        <Image src="Logo.svg" h="14"/>
       </Flex>
     </Heading>
   )
