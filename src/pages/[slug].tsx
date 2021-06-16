@@ -3,11 +3,18 @@ import { Box } from '@chakra-ui/react';
 import { Heading } from '../components/Continent/Heading';
 import { api } from '../services/api';
 import { Content } from '../components/Continent/Content';
+import { FeaturedCities } from '../components/Continent/FeaturedCities';
+
+
+interface Country {
+  name: string;
+  flag_image_url: string;
+};
 
 interface FeaturedCity {
   id: number;
   name: string;
-  country: string;
+  country: Country;
   image_url: string;
 }
 
@@ -34,6 +41,7 @@ export default function ContinentPage({continent}: ContinentPageProps) {
     <Box>
       <Heading bannerUrl={continent.banner_url} title={continent.name}/>
       <Content description={continent.description} stats={continent.stats}/>
+      <FeaturedCities cities={continent.featured_cities}/>
     </Box>
   )
 }

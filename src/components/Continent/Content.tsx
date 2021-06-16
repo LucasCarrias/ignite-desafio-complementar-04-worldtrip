@@ -18,7 +18,7 @@ export function Content({ description, stats }: ContinentContentProps) {
       spacing={70}
       maxWidth={1440}
       height="300px"
-      justifyContent="space-around"
+      justifyContent="space-between"
       align="center"
     >
       <Text w={600} textAlign="justify" lineHeight="36px" fontSize="24px">
