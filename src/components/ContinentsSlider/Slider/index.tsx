@@ -29,6 +29,7 @@ export function Slider() {
             title="Europa"
             subTitle="O continente mais antigo"
             bgImagePath="images/europe/slide.jpg"
+            slug="europe"
           />
         </SwiperSlide>
 
