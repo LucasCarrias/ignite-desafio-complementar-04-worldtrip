@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Banner />
       <TravelTypes />
-      <Divider bg="gray.600" h={1} w={90} m="auto" borderRadius="full"/>
+      <Divider bg="gray.600" h={1} w={90} mx="auto" my={["24px", "auto"]} borderRadius="full"/>
       <ContinentsSlider />
     </>
   );

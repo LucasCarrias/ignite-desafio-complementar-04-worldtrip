@@ -10,7 +10,7 @@ SwiperCore.use([Pagination, Navigation]);
 
 export function Slider() {
   return (
-    <Box my="10" mx="24">
+    <Box my={["5", "20"]} mx={["0", "24px"]}>
       <Swiper
         className={styles["swiper-container"]}
         pagination={true}
