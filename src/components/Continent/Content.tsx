@@ -13,18 +13,18 @@ interface ContinentContentProps {
 export function Content({ description, stats }: ContinentContentProps) {
   return (
     <Flex
-      mx="140px"
-      my="80px"
-      spacing={70}
-      maxWidth={1440}
-      height="300px"
+      mx={["1rem", "140px"]}
+      my={["24px", "80px"]}
+      maxWidth={["100%", "140px"]}
+      height={["auto", "300px"]}
       justifyContent="space-between"
       align="center"
+      flexDirection={["column", "row"]}
     >
-      <Text w={600} textAlign="justify" lineHeight="36px" fontSize="24px">
+      <Text w={["100%", "600px"]} textAlign="justify" lineHeight={["21px", "36px"]} fontSize={["14px", "24px"]}>
         {description}
       </Text>
-      <HStack spacing={42}>
+      <HStack spacing={42} mt={["1rem", "0"]}>
         <StatsItem value={stats.countries} legend="países" />
         <StatsItem value={stats.languages} legend="linguas" />
         <StatsItem

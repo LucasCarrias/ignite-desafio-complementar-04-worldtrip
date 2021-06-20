@@ -13,7 +13,7 @@ interface CityCardProps {
 
 export function CityCard({ name, country, image_url }: CityCardProps) {
   return (
-    <Stack w="256px" spacing={0}>
+    <Stack w={["256px"]} spacing={0} mx={["auto", "0"]}>
       <Image src={image_url} alt={name} borderTopRadius="0.25rem" />
       <Flex
         justifyContent="space-between"
